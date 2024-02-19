@@ -52,7 +52,6 @@ describe("Launches API", () => {
       const responseDate = new Date(response.body.launchDate).valueOf()
 
       expect(responseDate).toBe(requestDate)
-
       expect(response.body).toMatchObject(launchDataWithoutDate)
     })
 
